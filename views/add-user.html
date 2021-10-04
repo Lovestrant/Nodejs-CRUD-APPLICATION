@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Aplication</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!--Font icons link from ejs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Header-->
+    <div id="header">
+        <nav>
+        <div class="container">
+            <div class="text-centre">
+                <a href="/" class="nav-brand text-dark">User Management System</a>
+            </div>
+        </div>
+      </nav>
+    </div>
+    <!--/Header-->
+    <!--Form handling-->
+    <form method="POST" id="update-user">
+        <div class="form-title text-centre">
+            <h2 class="text-dark">Add new user</h2>
+            <span class="text-light">Use the form below to create a new user:</span>
+        </div>
+        <div class="new_user">
+            <div class="form-group">
+                <label for="name" class="text-light">Name</label>
+                <input type="hidden" name="id" value="">
+                <input type="text" name="name" value="" placeholder="Mark Jones">
+
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-light">Email</label>
+                <input type="text" name="email" value="" placeholder="example@gmail.com">
+                
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="name" class="text-light">Gender</label>
+              
+                <div class="radio-inline">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" value="female">
+                </div>
+                <br><br>
+            <div class="form-group">
+                <label for="Status" class="text-light">Status</label>
+                
+                <div class="radio-inline">
+                    <label for="Status">Active</label>
+                    <input type="radio" name="Status" value="active">
+                    <label for="gender">Inactive</label>
+                    <input type="radio" name="Status" value="inactive">
+                </div>
+                <div class="submit">
+                    <button type="submit">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+    <!--/Form handling-->
+
+    <!--main-->
+    <main id="main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                <span class="text-gradient"> New user</span>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!--/main-->
+    
+</body>
+</html>
